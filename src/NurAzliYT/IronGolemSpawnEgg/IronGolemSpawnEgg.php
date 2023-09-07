@@ -39,12 +39,12 @@ class IronGolemSpawnEgg extends PluginBase{
         }
         return true;
     }
-    public static function IRON_GOLEM_SPAWN_EGG(): IronGolemSpawm{
+    public static function IRON_GOLEM_SPAWN_EGG(): IronGolemSpawn{
         return new IronGolemSpawn(new ItemIndentifier(30000), 'iron Golem Spawm Egg');
 }
 
 class IronGolemSpawn extends SpawnEgg {
     public function createEntity(World $world, Vector3 $pos, float $yaw, float $pitch) : Entity{
-        return new Iron_Golem(Location::formObject($pos, $world, $yaw, $pitch));
-}
+ return new Iron_Golem(Location::formObject($pos, $world, $yaw, $pitch));
+    }
 }
