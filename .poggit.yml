@@ -5,4 +5,5 @@ branches:
 projects:
   VanillaItem:
     path: ""
+    icon: "icon.png"
 ...
