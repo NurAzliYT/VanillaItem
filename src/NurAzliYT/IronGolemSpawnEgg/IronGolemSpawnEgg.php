@@ -6,8 +6,15 @@ namespace NurAzliYT\IronGolemSpawnEgg;
 
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
+use Minecraft\entity\IronGolem;
+use pocketmine\item\ItemIdentifier;
+use pocketmine\item\SpawnEgg;
+use pocketmine\item\VanillaItems;
+use pocketmine\math\Vector3;
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
+use pocketmine\world\format\io\GlobalItemDataHandlers;
+use pocketmine\world\World;
 
 class IronGolemSpawnEgg extends PluginBase{
   protected function OnEnable(): void
@@ -39,4 +46,5 @@ class IronGolemSpawnEgg extends PluginBase{
 class IronGolemSpawn extends SpawnEgg {
     public function createEntity(World $world, Vector3 $pos, float $yaw, float $pitch) : Entity{
         return new Iron_Golem(Location::formObject($pos, $world, $yaw, $pitch));
+}
 }
