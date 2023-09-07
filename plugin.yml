@@ -1,14 +1,6 @@
-name:
-main:
-api: NurAzliYT\VanillaItem\VanillaItem
+name: IronGolemSpawnEgg
+main: NurAzliYT\IronGolemSpawnEgg\IronGolemSpawnEgg
+api: 5.0.0
 version: 0.0.1
 author: NurAzliYT
 description: "Added VanillaItem On Your Server"
-
-command:
-   vanillaitem:
-   permission: vanillaversion.command
-
-permissions:
-vanillaitem.command:
-default: true
