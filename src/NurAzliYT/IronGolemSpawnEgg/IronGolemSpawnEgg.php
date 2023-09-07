@@ -37,7 +37,7 @@ class IronGolemSpawnEgg extends PluginBase{
             return false;
             break;
         }
-        return true
+        return true;
     }
     public static function IRON_GOLEM_SPAWN_EGG(): IronGolemSpawm{
         return new IronGolemSpawn(new ItemIndentifier(30000), 'iron Golem Spawm Egg');
