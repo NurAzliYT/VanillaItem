@@ -1,0 +1,14 @@
+name:
+main:
+api: NurAzliYT\VanillaItem\VanillaItem
+version: 0.0.1
+author: NurAzliYT
+description: "Added VanillaItem On Your Server"
+
+command:
+   vanillaitem:
+   permission: vanillaversion.command
+
+permissions:
+vanillaitem.command:
+default: true
