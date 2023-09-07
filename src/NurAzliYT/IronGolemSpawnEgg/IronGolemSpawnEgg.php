@@ -19,7 +19,7 @@ use pocketmine\world\World;
 class IronGolemSpawnEgg extends PluginBase{
   protected function OnEnable(): void
   {
-      GlobalItemDataHandlers::getDeserializer()->map(ItemTypeNames::IRON_GOLEM_SPAWM_EGG, fn() => self::IRON_GOLEM_SPAWN_EGG());
+      GlobalItemDataHandlers::getDeserializer()->map(ItemTypeNames::IRON_GOLEM_SPAWN_EGG, fn() => self::IRON_GOLEM_SPAWN_EGG());
       GlobalItemDataHandlers::getSerializer()->map(self::IRON_GOLEM_SPAWN_EGG(), fn() => new SavedItemData(ItemTypeNames::IRON_GOLEM_SPAWN_EGG));
   }
 
