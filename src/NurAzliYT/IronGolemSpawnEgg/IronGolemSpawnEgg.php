@@ -34,7 +34,7 @@ class IronGolemSpawnEgg extends PluginBase{
             return true;
             break;
         default:
-            return false
+            return false;
             break;
         }
         return true
